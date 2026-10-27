@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA Library</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="min-h-screen bg-white text-gray-800">
+
+    <!-- NAVIGATION BAR -->
+        <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex shrink-0 items-center gap-3">
+                <i class="fa-solid fa-book-open text-3xl text-green-800"></i>
+
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900">NOVA Library</h1>
+                    <p class="text-sm text-gray-500">Your world of knowledge</p>
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            <div class="hidden items-center gap-6 lg:flex underline decoration-[#A28B6A] decoration-2 underline-offset-8'
+            : 'text-[#716B61] hover:text-[#38352F]">
+
+               <a href="index.html" class="hover:text-green-700">Home</a>
+
+                <a href="books.html" class="hover:text-green-700">Books</a>
+
+                <a href="about.html" class="hover:text-green-700">About</a>
+
+                <a href="favorites.html" class="hover:text-green-700">Favorites</a>
+
+                <a href="contact.html" class="hover:text-green-400 hover:text-green-700">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="w-full bg-green-50">
+            <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+                <p class="text-green-700 font-bold uppercase tracking-widest text-sm mb-5">
+                    <i class="fa-solid fa-book-open mr-2"></i>
+                    Get to Know Us
+                </p>
+
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-950 leading-tight max-w-3xl">
+                    Welcome to
+                    <span class="text-green-800">NOVA Library</span>
+                </h1>
+
+                <p class="text-gray-600 text-lg leading-8 max-w-2xl mt-6">
+                    Your journey to a world of endless possibilities begins with NOVA. 
+                    Discover books that awaken your curiosity, challenge your thinking, and 
+                    inspire you to dream bigger. Every page holds the power to change your perspective,
+                     and your next great discovery is waiting to be found.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="books.html"
+                       class="bg-green-800 text-white px-7 py-3 rounded-full font-semibold hover:bg-green-900">
+                        <i class="fa-solid fa-book mr-2"></i>
+                        Explore Books
+                    </a>
+
+                    <a href="#our-story"
+                       class="border border-green-800 text-green-900 px-7 py-3 rounded-full font-semibold hover:bg-green-100">
+                        Learn More
+                        <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT INTRODUCTION -->
+        <section id="our-story" class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <!-- Text -->
+                <div>
+                    <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+                        About Our Library
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-950 mt-4 leading-tight">
+                        A Place Where Knowledge
+                        <span class="text-green-800">Comes Alive</span>
+                    </h2>
+
+                    <p class="text-gray-600 leading-8 mt-6">
+                        NOVA Library is a place for readers, learners,
+                        and curious minds. Our goal is to make discovering
+                        books simple and enjoyable.
+                    </p>
+
+                    <p class="text-gray-600 leading-8 mt-4">
+                        Whether you want to explore exciting stories, develop
+                        new skills, learn about business, or improve yourself,
+                        we want to help you find books that inspire your journey.
+                    </p>
+
+                    <a href="books.html"
+                       class="inline-block mt-7 text-green-800 font-bold hover:text-green-950">
+                        Discover our collection
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Decorative Library Illustration -->
+                <div class="bg-green-100 rounded-3xl p-8 md:p-12 text-center">
+                    <div class="bg-white rounded-2xl p-8 shadow-sm">
+                        <i class="fa-solid fa-book-open text-7xl text-green-800"></i>
+
+                        <h3 class="text-2xl font-bold text-green-950 mt-6">
+                            Knowledge for Everyone
+                        </h3>
+
+                        <p class="text-gray-600 mt-3 leading-7">
+                            Read, discover, learn, and grow with every page.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MISSION AND VISION -->
+        
+        <section class="bg-green-50 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+                        Our Purpose
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-950 mt-4">
+                        Our Mission and Vision
+                    </h2>
+
+                    <p class="text-gray-600 mt-4 leading-7">
+                        Everything we do is guided by our love of books,
+                        learning, and sharing knowledge.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Mission -->
+                    <div class="bg-white p-8 md:p-10 rounded-2xl border border-green-100 shadow-sm">
+                        <div class="bg-green-100 text-green-800 w-14 h-14 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-bullseye text-2xl"></i>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-green-950 mt-6">
+                            Our Mission
+                        </h3>
+
+                        <p class="text-gray-600 leading-8 mt-4">
+                            Our mission is to help people discover useful,
+                            educational, and inspiring books. We aim to
+                            encourage reading and make knowledge easier
+                            to explore.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="bg-white p-8 md:p-10 rounded-2xl border border-green-100 shadow-sm">
+                        <div class="bg-green-100 text-green-800 w-14 h-14 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-eye text-2xl"></i>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-green-950 mt-6">
+                            Our Vision
+                        </h3>
+
+                        <p class="text-gray-600 leading-8 mt-4">
+                            Our vision is to build a community where reading
+                            is valued, curiosity is encouraged, and everyone
+                            feels inspired to keep learning.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- OUR VALUES -->
+        <section class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+                    What Matters to Us
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-950 mt-4">
+                    Our Core Values
+                </h2>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    These values guide how we help readers discover knowledge.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
+                <!-- Value 1 -->
+                <div class="p-7 rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition">
+                    <i class="fa-solid fa-book-open text-3xl text-green-800"></i>
+
+                    <h3 class="text-xl font-bold text-green-950 mt-5">
+                        Love of Reading
+                    </h3>
+
+                    <p class="text-gray-600 leading-7 mt-3">
+                        We encourage people to enjoy books and make reading
+                        part of everyday life.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="p-7 rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition">
+                    <i class="fa-solid fa-graduation-cap text-3xl text-green-800"></i>
+
+                    <h3 class="text-xl font-bold text-green-950 mt-5">
+                        Learning
+                    </h3>
+
+                    <p class="text-gray-600 leading-7 mt-3">
+                        We believe learning helps people build skills and
+                        discover new opportunities.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="p-7 rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition">
+                    <i class="fa-solid fa-lightbulb text-3xl text-green-800"></i>
+
+                    <h3 class="text-xl font-bold text-green-950 mt-5">
+                        Curiosity
+                    </h3>
+
+                    <p class="text-gray-600 leading-7 mt-3">
+                        We inspire readers to ask questions, explore ideas,
+                        and think creatively.
+                    </p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="p-7 rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition">
+                    <i class="fa-solid fa-users text-3xl text-green-800"></i>
+
+                    <h3 class="text-xl font-bold text-green-950 mt-5">
+                        Community
+                    </h3>
+
+                    <p class="text-gray-600 leading-7 mt-3">
+                        We want to encourage a welcoming community of readers
+                        and lifelong learners.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        
+        <section class="max-w-7xl mx-auto px-6 pb-20">
+            <div class="bg-green-900 rounded-3xl px-6 py-14 md:p-16 text-center text-white">
+
+                <i class="fa-solid fa-book-open-reader text-4xl text-green-200"></i>
+
+                <h2 class="text-3xl md:text-4xl font-bold mt-5">
+                    Ready to Discover Your Next Great Read?
+                </h2>
+
+                <p class="text-green-100 max-w-2xl mx-auto mt-5 leading-7">
+                    Start exploring our collection and find books that
+                    inspire your imagination and expand your knowledge.
+                </p>
+
+                <a href="books.html"
+                   class="inline-block mt-8 bg-white text-green-900 px-8 py-4 rounded-full font-bold hover:bg-green-100">
+                    Browse Books
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-green-950 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Footer Logo -->
+                <div>
+                    <a href="index.html" class="inline-flex items-center gap-3">
+                        <i class="fa-solid fa-book-open text-3xl text-green-300"></i>
+
+                        <span class="text-2xl font-bold">NOVA</span>
+                    </a>
+
+                    <p class="text-green-200 text-sm mt-4 leading-7">
+                        Your world of knowledge. Discover, learn, and grow
+                        one book at a time.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold text-lg">Quick Links</h3>
+
+                    <div class="flex flex-col items-start gap-3 mt-4 text-green-100 underline decoration-[#A28B6A] decoration-2 underline-offset-8'
+            : 'text-[#716B61] hover:text-[#38352F]">
+                        <a href="index.html" class="hover:text-white">Home</a>
+                        <a href="books.html" class="hover:text-white">Books</a>
+                        <a href="contact.html" class="hover:text-white">Contact</a>
+                        <a href="about.html" class="hover:text-white">About</a>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="border-t border-green-800 mt-10 pt-6 text-center text-green-200 text-sm">
+                <p>&copy; 2026 BookNest Library. All rights reserved.</p>
+                <p class="mt-2">Your world of knowledge.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
