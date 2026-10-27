@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | NOVA Library</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+   <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex shrink-0 items-center gap-3">
+                <i class="fa-solid fa-book-open text-3xl text-green-800"></i>
+
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900">NOVA Library</h1>
+                    <p class="text-sm text-gray-500">Your world of knowledge</p>
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            <div class="hidden items-center gap-6 lg:flex underline decoration-[#A28B6A] decoration-2 underline-offset-8'
+            : 'text-[#716B61] hover:text-[#38352F]">
+
+               <a href="index.html" class="hover:text-green-700">Home</a>
+
+                <a href="books.html" class="hover:text-green-700">Books</a>
+
+                <a href="about.html" class="hover:text-green-700">About</a>
+
+                <a href="favorites.html" class="hover:text-green-700">Favorites</a>
+
+                <a href="contact.html" class="hover:text-green-400 hover:text-green-700">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+  <!-- Hero Section -->
+  <section class="bg-green-800 px-5 py-16 text-center text-white md:py-20">
+    <div class="mx-auto max-w-3xl">
+
+      <div class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-3xl">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+      <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-green-200">
+        We would love to hear from you
+      </p>
+
+      <h2 class="text-3xl font-bold md:text-5xl">
+        Get in Touch With Us
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-2xl leading-7 text-green-100">
+        Have a question, need help finding a book, or want to suggest a new title?
+        Contact our team. We are happy to help you.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <main class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
+
+    <div class="grid gap-10 lg:grid-cols-2">
+
+      <!-- Contact Information -->
+      <section>
+        <p class="mb-3 font-semibold uppercase tracking-widest text-green-700">
+          Contact Information
+        </p>
+
+        <h2 class="text-3xl font-bold text-gray-900">
+          Let's start a conversation
+        </h2>
+
+        <p class="mt-4 max-w-lg leading-7 text-gray-600">
+          We are here to make your reading experience easier. Reach out to us
+          through any of the contact options below.
+        </p>
+
+
+        <!-- Email -->
+        <div class="mt-8 flex items-start gap-4">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-100 text-xl text-green-800">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-gray-900">Email Address</h3>
+
+            <a
+              href="mailto:hello@novalibrary.example"
+              class="mt-1 inline-block text-gray-600 hover:text-green-700"
+            >
+              hello@novalibrary.example
+            </a>
+
+            <p class="mt-1 text-sm text-gray-500">
+              Send us your questions anytime.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Phone -->
+        <div class="mt-6 flex items-start gap-4">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-100 text-xl text-green-800">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-gray-900">Phone Number</h3>
+
+            <a
+              href="tel:+250700000000"
+              class="mt-1 inline-block text-gray-600 hover:text-green-700"
+            >
+              +250 700 000 000
+            </a>
+
+            <p class="mt-1 text-sm text-gray-500">
+              Replace this example with your real number.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Location -->
+        
+        <div class="mt-6 flex items-start gap-4">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-100 text-xl text-green-800">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-gray-900">Our Location</h3>
+            <p class="mt-1 text-gray-600">Kigali, Rwanda</p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Kigali%2C%20Rwanda"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-green-700 hover:text-green-900"
+            >
+              View on Google Maps
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Social Media -->
+        
+        <div class="mt-10">
+          <h3 class="font-bold text-gray-900">Follow Us</h3>
+
+          <p class="mt-2 text-sm text-gray-600">
+            Connect with us on social media.
+          </p>
+
+          <div class="mt-4 flex gap-3">
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-green-100 text-green-800 transition hover:bg-green-700 hover:text-white"
+            >
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-green-100 text-green-800 transition hover:bg-green-700 hover:text-white"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-green-100 text-green-800 transition hover:bg-green-700 hover:text-white"
+            >
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-green-100 text-green-800 transition hover:bg-green-700 hover:text-white"
+            >
+              <i class="fa-brands fa-youtube text-lg"></i>
+            </a>
+
+          </div>
+
+          <p class="mt-3 text-xs text-gray-500">
+            Replace these general social media links with your own NOVA Library profiles.
+          </p>
+        </div>
+
+      </section>
+
+
+      <!-- Contact Form -->
+      <section class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm md:p-8">
+
+        <div class="mb-7">
+          <h2 class="text-2xl font-bold text-gray-900">
+            Send Us a Message
+          </h2>
+
+          <p class="mt-2 text-gray-600">
+            Fill in the form below and tell us how we can help.
+          </p>
+        </div>
+
+        <form action="#" method="post" class="space-y-5">
+
+          <!-- Name -->
+          <div>
+            <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
+              Full Name
+            </label>
+
+            <div class="relative">
+              <i class="fa-regular fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+                class="w-full rounded-lg border border-gray-300 py-3 pl-11 pr-4 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              >
+            </div>
+          </div>
+
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="mb-2 block text-sm font-semibold text-gray-700">
+              Email Address
+            </label>
+
+            <div class="relative">
+              <i class="fa-regular fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+                class="w-full rounded-lg border border-gray-300 py-3 pl-11 pr-4 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              >
+            </div>
+          </div>
+
+
+          <!-- Subject -->
+          <div>
+            <label for="subject" class="mb-2 block text-sm font-semibold text-gray-700">
+              Subject
+            </label>
+
+            <div class="relative">
+              <i class="fa-regular fa-message absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is your message about?"
+                required
+                class="w-full rounded-lg border border-gray-300 py-3 pl-11 pr-4 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              >
+            </div>
+          </div>
+
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="mb-2 block text-sm font-semibold text-gray-700">
+              Your Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+              class="w-full resize-y rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-100"
+            ></textarea>
+          </div>
+
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="flex w-full items-center justify-center gap-3 rounded-lg bg-green-700 px-6 py-3.5 font-semibold text-white transition hover:bg-green-800"
+          >
+            Send Message
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+
+        </form>
+
+      </section>
+
+    </div>
+
+
+    <!-- FAQ Section -->
+    
+    <section class="mt-20">
+
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="mb-3 font-semibold uppercase tracking-widest text-green-700">
+          Frequently Asked Questions
+        </p>
+
+        <h2 class="text-3xl font-bold text-gray-900">
+          How can we help you?
+        </h2>
+
+        <p class="mt-4 leading-7 text-gray-600">
+          Here are answers to some common questions about NOVA Library.
+        </p>
+      </div>
+
+
+      <div class="mx-auto mt-10 grid max-w-5xl gap-5 md:grid-cols-2">
+
+        <!-- FAQ 1 -->
+        <article class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-book-open mt-1 text-xl text-green-700"></i>
+
+            <div>
+              <h3 class="font-bold text-gray-900">
+                How can I find a book?
+              </h3>
+
+              <p class="mt-3 leading-7 text-gray-600">
+                Visit our Browse Books page to explore available books and search
+                for titles that interest you.
+              </p>
+
+              <a href="books.html" class="mt-3 inline-flex items-center gap-2 font-semibold text-green-700 hover:text-green-900">
+                Books
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- FAQ 2 -->
+        
+        <article class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-heart mt-1 text-xl text-green-700"></i>
+
+            <div>
+              <h3 class="font-bold text-gray-900">
+                How do I save my favorite books?
+              </h3>
+
+              <p class="mt-3 leading-7 text-gray-600">
+                Use the Add to Favorites button on supported book cards to save
+                books you want to read later.
+              </p>
+
+              <a href="favorites.html" class="mt-3 inline-flex items-center gap-2 font-semibold text-green-700 hover:text-green-900">
+                View Favorites
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- FAQ 3 -->
+        
+        <article class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-lightbulb mt-1 text-xl text-green-700"></i>
+
+            <div>
+              <h3 class="font-bold text-gray-900">
+                Can I suggest a book?
+              </h3>
+
+              <p class="mt-3 leading-7 text-gray-600">
+                Yes. Send us a message using the contact form and include the
+                title and author of the book you recommend.
+              </p>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- FAQ 4 -->
+        
+        <article class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-question mt-1 text-xl text-green-700"></i>
+
+            <div>
+              <h3 class="font-bold text-gray-900">
+  How can I get started?
+</h3>
+
+<p class="mt-3 leading-7 text-gray-600">
+  Visit our Home page to discover featured books, explore new reads, and begin your reading journey with NOVA.
+</p>
+
+<a href="index.html" class="mt-3 inline-flex items-center gap-2 font-semibold text-green-700 hover:text-green-900">
+  Explore Home Page
+</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 px-5 py-10 text-gray-300">
+
+    <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-3 lg:px-8">
+
+      <!-- Footer Logo -->
+      <div>
+        <a href="index.html" class="inline-flex items-center gap-3 text-white">
+          <i class="fa-solid fa-book-open text-2xl text-green-400"></i>
+          <span class="text-xl font-bold">NOVA Library</span>
+        </a>
+
+        <p class="mt-4 max-w-sm text-sm leading-7 text-gray-400">
+          At NOVA, find the stories that touch your heart, 
+          inspire your dreams, and open your mind to endless possibilities.
+        </p>
+      </div>
+
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-bold text-white">Quick Links</h3>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>
+            <a href="index.html" class="hover:text-green-400">Home</a>
+          </li>
+
+          <li>
+            <a href="books.html" class="hover:text-green-400">Books</a>
+          </li>
+
+
+          <li>
+            <a href="about.html" class="hover:text-green-400">About</a>
+          </li>
+
+          <li>
+            <a href="favorites.html" class="hover:text-green-400">Favorites</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="text-green-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Contact Links -->
+      
+      <div>
+        <h3 class="font-bold text-white">Get in Touch</h3>
+
+        <div class="mt-4 space-y-4 text-sm">
+
+          <a href="mailto:hello@novalibrary.example" class="flex items-center gap-3 hover:text-green-400">
+            <i class="fa-regular fa-envelope text-green-400"></i>
+            novalibrary@gmail.com
+          </a>
+
+          <a href="tel:+250700000000" class="flex items-center gap-3 hover:text-green-400">
+            <i class="fa-solid fa-phone text-green-400"></i>
+            +250 700 000 000
+          </a>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Kigali%2C%20Rwanda"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-3 hover:text-green-400"
+          >
+            <i class="fa-solid fa-location-dot text-green-400"></i>
+            Kigali, Rwanda
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    
+    <div class="mx-auto mt-10 max-w-7xl border-t border-gray-700 pt-6 text-center text-sm text-gray-500 lg:px-8">
+      <p>
+        &copy; 2026 NOVA Library. All rights reserved.
+      </p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
