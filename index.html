@@ -1,11 +1,369 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>NOVA Library | Unlock a World of Stories</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
-    
+
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex shrink-0 items-center gap-3">
+                <i class="fa-solid fa-book-open text-3xl text-green-800"></i>
+
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900">NOVA Library</h1>
+                    <p class="text-sm text-gray-500">Where Every Book Opens a New World</p>
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            
+            <div class="hidden items-center gap-6 lg:flex underline decoration-[#A28B6A] decoration-2 underline-offset-8'
+            : 'text-[#716B61] hover:text-[#38352F]">
+
+               <a href="index.html" class="hover:text-green-700">Home</a>
+
+                <a href="books.html" class="hover:text-green-700">Books</a>
+
+                <a href="about.html" class="hover:text-green-700">About</a>
+
+                <a href="favorites.html" class="hover:text-green-700">Favorites</a>
+
+                <a href="contact.html" class="hover:text-green-400 hover:text-green-700">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="bg-green-50">
+            <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2 md:py-24">
+
+                <!-- HERO TEXT -->
+                
+                <div>
+                    <p class="mb-4 font-semibold uppercase tracking-widest text-green-800">
+                        Welcome to NOVA Library
+                    </p>
+
+                    <h2 class="text-4xl font-bold leading-tight text-green-950 sm:text-5xl lg:text-6xl">
+                        Explore Stories, Expand Your Mind
+                    </h2>
+
+                    <p class="mt-6 max-w-xl text-lg leading-8 text-gray-600">
+                        Explore a world of knowledge, imagination, and inspiration.
+                        Find books that help you learn, grow, and enjoy every page.
+                    </p>
+
+
+                    <!-- HERO BUTTONS -->
+                    
+                    <div class="mt-7 flex flex-wrap gap-4">
+                        <a href="books.html"
+                           class="rounded-lg bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900">
+                            Explore Books
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+
+                        <a href="#about"
+                           class="rounded-lg border border-green-800 px-6 py-3 font-semibold text-green-800 transition hover:bg-green-100">
+                            About Our Library
+                        </a>
+                    </div>
+
+                    <!-- SMALL BENEFITS -->
+                    
+                    <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-600">
+                        <span>
+                            <i class="fa-solid fa-book text-green-800"></i>
+                            Diverse Collection
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-lightbulb text-green-800"></i>
+                            Learn Something New
+                        </span>
+                    </div>
+                </div>
+
+                <!-- HERO IMAGE -->
+                
+                <div class="relative">
+                    <img
+                        src="/images/books.JPEG" alt="books in a library"
+                        class="h-80 w-full rounded-2xl object-cover shadow-lg sm:h-96 md:h-[480px]">
+                    
+
+                    <div class="absolute bottom-5 left-5 right-5 rounded-xl bg-white/95 p-4 shadow-lg">
+                        <p class="font-bold text-green-900">
+                            <i class="fa-solid fa-book-open mr-2"></i>
+                            Every book opens a new world.
+                        </p>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Start your next reading journey with NOVA.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURED BOOKS -->
+        
+        <section class="mx-auto max-w-7xl px-6 py-16">
+
+            <div class="flex flex-wrap items-end justify-between gap-4">
+                <div>
+                    <p class="font-semibold uppercase tracking-widest text-green-800">
+                        Handpicked for you
+                    </p>
+
+                    <h2 class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
+                        Featured Books
+                    </h2>
+
+                    <p class="mt-3 text-gray-600">
+                        Find inspiration in our selection of recommended reads.
+                    </p>
+                </div>
+
+                <a href="books.html"
+                   class="font-semibold text-green-800 hover:text-green-950">
+                    View All Books
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+
+            <p id="featured-status" role="status" aria-live="polite" class="mt-5 text-sm text-gray-500"></p>
+            <div id="featured-grid" class="mt-8 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
+                
+                <!-- home.js adds the featured books from Open Library. -->
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE BOOKNEST -->
+        <section class="mx-auto max-w-7xl px-6 py-16">
+
+            <div class="text-center">
+                <p class="font-semibold uppercase tracking-widest text-green-800">
+                    The NOVA experience
+                </p>
+
+                <h2 class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
+                    Why Choose NOVA?
+                </h2>
+
+                <p class="mx-auto mt-3 max-w-2xl text-gray-600">
+                    “At NOVA, we believe every book is a doorway to new possibilities,every story is an <br>
+                    opportunity to grow, and every reader has the power to shape a brighter future.”
+                </p>
+            </div>
+
+
+            <div class="mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div class="rounded-2xl bg-white p-7 shadow-sm">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-100">
+                        <i class="fa-solid fa-book-open text-2xl text-green-800"></i>
+                    </div>
+
+                    <h3 class="mt-5 text-xl font-bold">A Diverse Collection</h3>
+
+                    <p class="mt-3 leading-7 text-gray-600">
+                        Explore different subjects, stories, and learning materials
+                        in one place.
+                    </p>
+                </div>
+
+
+                <div class="rounded-2xl bg-white p-7 shadow-sm">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-100">
+                        <i class="fa-solid fa-lightbulb text-2xl text-green-800"></i>
+                    </div>
+
+                    <h3 class="mt-5 text-xl font-bold">Learn and Grow</h3>
+
+                    <p class="mt-3 leading-7 text-gray-600">
+                        Find resources that inspire curiosity, build knowledge,
+                        and support personal growth.
+                    </p>
+                </div>
+
+
+                <div class="rounded-2xl bg-white p-7 shadow-sm">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-100">
+                        <i class="fa-solid fa-compass text-2xl text-green-800"></i>
+                    </div>
+
+                    <h3 class="mt-5 text-xl font-bold">Easy to Explore</h3>
+
+                    <p class="mt-3 leading-7 text-gray-600">
+                        Explore books and move easily between our library pages.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        
+        <section id="about" class="bg-green-50 py-16">
+            <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 md:grid-cols-2">
+
+                <div>
+                    <img
+                        src="images/books2.JPEG"
+                        alt="A welcoming library with bookshelves and reading spaces"
+                        class="h-72 w-full rounded-2xl object-cover shadow-md sm:h-96"
+                    >
+                </div>
+
+                <div>
+                    <p class="font-semibold uppercase tracking-widest text-green-800">
+                        About our library
+                    </p>
+
+                    <h2 class="mt-3 text-3xl font-bold text-green-950 sm:text-4xl">
+                        A Place for Explorers, Fuel Your Curiosity, and Adventurers
+                    </h2>
+
+                    <p class="mt-5 leading-8 text-gray-600">
+                        Every great journey begins with curiosity, and every book holds the possibility of<br>
+                         changing a life. At NOVA, we help curious minds, passionate learners, and lifelong <br>
+                         dreamers discover stories that inspire them, knowledge that empowers them, and <br>
+                         ideas that help them see beyond what they already know. We make finding your<br>
+                          next book more than a search; we make it the beginning of something extraordinary..
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FINAL CALL TO ACTION -->
+        
+        <section class="mx-auto max-w-7xl px-6 py-16">
+            <div class="rounded-2xl bg-green-900 px-6 py-12 text-center text-white md:px-12">
+
+                <i class="fa-solid fa-book-open-reader mb-5 text-4xl"></i>
+
+                <h2 class="text-3xl font-bold sm:text-4xl">
+                   A New World Awaits Between the Pages.
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl leading-7 text-green-100">
+                    “Discover more. Save your favorites. Let every book take you somewhere new.”
+                </p>
+
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="books.html"
+                       class="rounded-lg bg-white px-6 py-3 font-semibold text-green-900 transition hover:bg-green-100">
+                        Browse Books
+                    </a>
+
+                    <a href="contact.html"
+                       class="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-green-800">
+                        Contact us
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-10">
+
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- BRAND -->
+                <div>
+                    <a href="index.html" class="inline-flex items-center gap-3">
+                        <i class="fa-solid fa-book-open text-2xl text-green-800"></i>
+
+                        <span class="text-xl font-bold text-green-900">
+                            NOVA
+                        </span>
+                    </a>
+
+                    <p class="mt-4 max-w-xs leading-7 text-gray-600">
+                        “Read with curiosity. Learn with purpose. Grow without limits.”
+                    </p>
+                </div>
+
+
+                <!-- QUICK LINKS -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Quick Links</h3>
+
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <li><a href="index.html" class="hover:text-green-800">Home</a></li>
+                        <li><a href="books.html" class="hover:text-green-800">Browse Books</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- ABOUT LINKS -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Explore BookNest</h3>
+
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <li><a href="index.html#about" class="hover:text-green-800">About Us</a></li>
+                        <li><a href="favorites.html" class="hover:text-green-800">My Favorites</a></li>
+                        <li><a href="books.html" class="hover:text-green-800">Explore Our Books</a></li>
+                        <li><a href="contact.html" class="hover:text-green-800">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- CONTACT -->
+                <div>
+                    <h3 class="font-bold text-gray-900">Find a Book</h3>
+
+                    <p class="mt-4 leading-7 text-gray-600">
+                        Search by title to find your next read.
+                    </p>
+
+                    <a href="books.html#search"
+                       class="mt-4 inline-block font-semibold text-green-800 hover:underline">
+                        Search Books
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
+                &copy; 2026 NOVA Library. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+<script type="module" src="./home.js"></script>
 </body>
 </html>
