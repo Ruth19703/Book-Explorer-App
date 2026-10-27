@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Favorites | NOVA Library</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+         <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex shrink-0 items-center gap-3">
+                <i class="fa-solid fa-book-open text-3xl text-green-800"></i>
+
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900">NOVA Library</h1>
+                    <p class="text-sm text-gray-500">Your world of knowledge</p>
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            <div class="hidden items-center gap-6 lg:flex underline decoration-[#A28B6A] decoration-2 underline-offset-8'
+            : 'text-[#716B61] hover:text-[#38352F]">
+
+               <a href="index.html" class="hover:text-green-700">Home</a>
+
+                <a href="books.html" class="hover:text-green-700">Books</a>
+
+                <a href="about.html" class="hover:text-green-700">About</a>
+
+                <a href="favorites.html" class="hover:text-green-700">Favorites</a>
+
+                <a href="contact.html" class="hover:text-green-400 hover:text-green-700">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+  <!-- Hero Section -->
+  <section class="bg-green-50 px-6 py-12 text-center">
+
+    <i class="fa-solid fa-heart text-4xl text-green-700"></i>
+
+    <h1 class="mt-4 text-3xl font-bold md:text-4xl">
+      My Favorite Books
+    </h1>
+
+    <p class="mx-auto mt-3 max-w-xl text-gray-600">
+      Keep the books you love in one place and return to them anytime.
+    </p>
+
+  </section>
+
+  <!-- Favorites Section -->
+  
+  <main class="mx-auto min-h-80 max-w-7xl px-6 py-12">
+
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+
+      <h2 class="text-2xl font-bold">
+        Your Collection
+      </h2>
+
+      <p id="favorites-count" class="text-sm text-gray-600">
+        0 favorite books
+      </p>
+
+    </div>
+
+    <!-- JavaScript will display favorite book cards here -->
+    <div
+      id="favorites-list"
+      class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+    ></div>
+
+    <!-- Empty State -->
+    
+    <div
+      id="empty-message"
+      class="hidden rounded-xl bg-white px-6 py-12 text-center shadow-sm"
+    >
+
+      <i class="fa-regular fa-heart text-4xl text-gray-400"></i>
+
+      <h3 class="mt-4 text-xl font-semibold">
+        No favorites yet
+      </h3>
+
+      <p class="mt-2 text-gray-600">
+        Browse our collection and add your favorite books to see them here.
+      </p>
+
+      <a
+        href="books.html"
+        class="mt-6 inline-block rounded-lg bg-green-700 px-6 py-3 font-semibold text-white hover:bg-green-800"
+      >
+        <i class="fa-solid fa-book-open mr-2"></i>
+        Browse Books
+      </a>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 px-6 py-6 text-center text-white">
+    <p>&copy; 2026 NOVA Library. All rights reserved.</p>
+  </footer>
+
+  <!-- Connect the external JavaScript module -->
+  
+  <script type="module" src="./favorites-page.js"></script>
+
+
+</body>
+</html>
